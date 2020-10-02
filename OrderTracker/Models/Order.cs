@@ -6,10 +6,11 @@ namespace OrderTracker.Models
   {
     private static List<Order> _instances = new List<Order> { };
     public string Description { get; set; }
-    
+
     public Order(string description)
     {
       Description = description;
+      _instances.Add(this);
     }
 
     public static List<Order> GetAll()
