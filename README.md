@@ -6,7 +6,10 @@
 
 ## Description
 
-This app will let you track vendors that place orders. You'll be able to add Vendors to a list, then click on that Vendor to see thier page. From there you will be able to link to a page to add an order for a particular Vendor.
+This app will let you track vendors that place orders. You'll be able to add Vendors to a list, then click on that Vendor to see thier page. 
+From there you will be able to add orders for them, then you can click on each order to see a details page.
+On the order details page there is a button to remove the order.
+
 
 
 
@@ -33,6 +36,10 @@ This app will let you track vendors that place orders. You'll be able to add Ven
 * 10 Find funciton will return an Order object based on its ID property.
 
 * 11 "AddOrder" function will add an order ovject to a list in the Vendor Object.
+
+Stretch Goals:
+
+* 12 "RemoveOrder: function will delete an order from a vendor's list.
 
 ## Setup/Installation Requirements
 

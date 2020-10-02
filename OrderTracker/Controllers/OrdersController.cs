@@ -32,12 +32,8 @@ namespace OrderTracker.Controllers
       Dictionary<string, object> model = new Dictionary<string, object>();
       vendor.RemoveOrder(orderId);
       model.Add("order", order);
-      model.Add("vendor", vendor);
-
-      
+      model.Add("vendor", vendor);      
       return View(model);
-    }   
-
-    
+    }       
   }
 }
