@@ -11,8 +11,8 @@ namespace OrderTracker.Models
     public Order(string description)
     {
       Description = description;
-      Id = 0;
       _instances.Add(this);
+      Id = _instances.Count;
     }
 
     public static List<Order> GetAll()
