@@ -41,9 +41,16 @@ namespace OrderTracker.Models
       Orders.Add(order);
     }
 
-    public void Remove(int Id)
+    public void RemoveOrder(int Id)
     {
       
+      for (int i = 0;i<Orders.Count;i++)
+      {
+        if (Orders[i].Id == Id)
+        {
+          Orders.RemoveAt(i);
+        }        
+      }
     }
 
   }
