@@ -27,12 +27,15 @@ namespace OrderTracker.Controllers
     [HttpPost("/vendors/{vendorId}/orders/{orderId}/delete")]
     public ActionResult Delete(int vendorId, int orderId)
     {
-      //Order order = Order.Find(orderId);
+      Order order = Order.Find(orderId);
       Vendor vendor = Vendor.Find(vendorId);
+      Dictionary<string, object> model = new Dictionary<string, object>();
       vendor.RemoveOrder(orderId);
+      model.Add("order", order);
+      model.Add("vendor", vendor);
 
       
-      return View();
+      return View(model);
     }   
 
     

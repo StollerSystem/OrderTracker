@@ -2,5 +2,7 @@
   Layout = "_Layout";
 }
 
-<h1>Order has been removed!</h1>
-<p><a href='/vendors'>Return to vendors</a></p>
+<div class="mainTheme">
+  <h1>Order @Model["order"].Title has been removed!</h1>
+  <p><a href='/vendors/@Model["vendor"].Id'>Return to vendor</a></p>
+</div>
