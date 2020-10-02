@@ -31,3 +31,11 @@ a {
 p, h3 {
   color: #080708;
 }
+
+.orderForm {
+  /* float: right; */
+  /* text-align: center; */
+  margin: auto;
+  padding: 5px;
+  /* width: 50%; */
+}

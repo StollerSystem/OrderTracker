@@ -6,16 +6,21 @@
 <div class="mainTheme">
   <h1>Add a new order to @Model.Name</h1>
   <form action="/vendors/@Model.Id/orders" method="post">
-    <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
-    <label for="orderTitle">order title</label>
-    <input required id="orderTitle" name="orderTitle" type="text">
-    <label for="orderDescription">order description</label>
-    <input required id="orderDescription" name="orderDescription" type="text">
-    <label for="orderPrice">order price</label>
-    <input required id="orderPrice" name="orderPrice" type="number">
-    <label for="orderDate">order date</label>
-    <input required id="orderDate" name="orderDate" type="date">
+    <div class="orderForm">
+      <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+      <label for="orderTitle">order title</label>
+      <input required id="orderTitle" name="orderTitle" type="text">
+      <label for="orderDescription">order description</label>
+      <input required id="orderDescription" name="orderDescription" type="text">
+    </div>
+    <div class="orderForm">
+      <label for="orderPrice">order price</label>
+      <input required id="orderPrice" name="orderPrice" type="number">
+      <label for="orderDate">order date</label>
+      <input required id="orderDate" name="orderDate" type="date">
+    </div>    
     <button type='submit'>Add order</button>
   </form>
+  <br>
   <p><a href='/'>Return to home Page</a></p>
 </div>
