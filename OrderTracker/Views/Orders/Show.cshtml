@@ -10,6 +10,11 @@
     <h3>Description: @Model["order"].Description</h3>
     <h3>Price: @Model["order"].Price</h3>
     <h3>Date: @Model["order"].Date</h3>
+
+  <form action="/vendors/@Model["vendor"].Id/orders/@Model["order"].Id/delete" method="post">
+    <button type="submit" name="button">Remove this order</button>
+  </form>
+
   </div>
   <a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order</a>
   <p><a href='/vendors'>View all vendors</a></p>
