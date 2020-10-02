@@ -15,6 +15,7 @@ namespace OrderTracker.Models
     public Vendor(string name, string description)
     {
       Name = name;
+      Description = description;
       _instances.Add(this);
       Id = _instances.Count;
       Orders = new List<Order> { };

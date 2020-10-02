@@ -4,11 +4,14 @@
 
 <div class="mainTheme">
   <h1><u>Order Details:</u> </h1>
-  <h2>Vendor: @Model["vendor"].Name</h2>
-  <h3>Order Title: @Model["order"].Title</h3>
-  <h3>Description: @Model["order"].Description</h3>
-  <h3>Price: @Model["order"].Price</h3>
-  <h3>Date: @Model["order"].Date</h3>
+  <div class="smallBorder">
+    <h3>Vendor: @Model["vendor"].Name</h3>
+    <h3>Order Title: @Model["order"].Title</h3>
+    <h3>Description: @Model["order"].Description</h3>
+    <h3>Price: @Model["order"].Price</h3>
+    <h3>Date: @Model["order"].Date</h3>
+  </div>
   <a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order</a>
-  <a href='/vendors'>View all vendors</a>
+  <p><a href='/vendors'>View all vendors</a></p>
+  <p><a href='/'>Return to home Page</a></p>
 </div>
