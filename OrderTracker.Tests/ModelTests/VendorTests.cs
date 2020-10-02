@@ -87,7 +87,7 @@ namespace OrderTracker.Tests
     {
       //Arrange
       string description = "Bread Order";
-      Order newOrder = new Order(description);
+      Order newOrder = new Order(description,"test","test","test");
       List<Order> newList = new List<Order> { newOrder };
       string name = "Test Vendor";
       Vendor newVendor = new Vendor(name,"test");
