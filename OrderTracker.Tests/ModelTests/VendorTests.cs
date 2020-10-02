@@ -6,7 +6,7 @@ using System;
 namespace OrderTracker.Tests
 {
   [TestClass]
-  public class CategoryTest : IDisposable
+  public class VendorTest : IDisposable
   {
 
     public void Dispose()
@@ -19,6 +19,20 @@ namespace OrderTracker.Tests
     {
       Vendor newVendor = new Vendor();
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
+    }
+
+    [TestMethod]
+    public void GetName_ReturnsName_String()
+    {
+      //Arrange
+      string name = "Test Vendor";
+      Vendor newVendor = new Vendor(name);
+
+      //Act
+      string result = newVendor.Name;
+
+      //Assert
+      Assert.AreEqual(name, result);
     }
 
 
