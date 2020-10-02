@@ -52,6 +52,21 @@ namespace ToDoList.Tests
       CollectionAssert.AreEqual(newList, result);
     }
 
+    [TestMethod]
+    public void GetId_ReturnsOrderId_Int()
+    {
+      //Arrange
+      string description = "Bread";
+      Order newOrder = new Order(description);
+
+      //Act
+      int result = newOrder.Id;
+
+      //Assert
+      Assert.AreEqual(1, result);
+    }
+
+
     
 
   }
