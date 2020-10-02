@@ -16,7 +16,7 @@ namespace OrderTracker.Models
     public Vendor(string name)
     {
       Name = name;
-      Id = 100;
+      Id = 1;
     }
   }
 }
