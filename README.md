@@ -26,9 +26,9 @@ This app will let you track vendors that place orders. You'll be able to add Ven
 
 * 6 Create an instance of a Order class object.
 
-* 7 Get the title to the Order object.
+* 7 Get the description of the Order object.
 
-* 8 Set the title of an Order object.
+* 8 Set the description of an Order object.
 
 * 9 Order obejcts will be stored in a list and accessed with a "GetAll" function.
 

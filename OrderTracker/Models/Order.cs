@@ -7,7 +7,7 @@ namespace OrderTracker.Models
     public string Description { get; set; }
     public Order(string description)
     {
-      Description = "test";
+      Description = description;
     }
   }
 }
