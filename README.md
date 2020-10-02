@@ -30,8 +30,8 @@ This app will let you track vendors that place orders. You'll be able to add Ven
 
 * 9 Each Vendor will have a unique ID property.
 
+* 10 Find funciton will return an Order object based on its ID property.
 
-* ? Find funciton will return an Order object based on its ID property.
 
 * 11 "AddOrder" function will add an order ovject to a list in the Vendor Object.
 

@@ -66,6 +66,22 @@ namespace ToDoList.Tests
       Assert.AreEqual(1, result);
     }
 
+    [TestMethod]
+    public void Find_ReturnsFoundOrder_Order()
+    {
+      //Arrange
+      string description1 = "Bread";
+      string description2 = "Pastry";
+      Order newOrder1 = new Order(description1);
+      Order newOrder2 = new Order(description2);
+
+      //Act
+      Order result = Order.Find(2);
+
+      //Assert
+      Assert.AreEqual(newOrder2, result);
+    }
+
 
     
 

@@ -24,5 +24,11 @@ namespace OrderTracker.Models
     {
       _instances.Clear();
     }
+
+    public static Order Find(int searchId)
+    {
+      return _instances[0];
+    }
+
   }
 }
