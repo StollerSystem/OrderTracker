@@ -1,6 +1,5 @@
-body {
-  background-color: #FDCA40;
-  color: #3772FF;
+body {  
+  background: linear-gradient(0deg, rgba(253,202,64,1) 80%, rgba(230,232,230,1) 100%) fixed;
 }
 
 .mainTheme { 
