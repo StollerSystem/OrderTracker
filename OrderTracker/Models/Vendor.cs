@@ -5,14 +5,16 @@ namespace OrderTracker.Models
 {
   public class Vendor 
   {
+    public string Name { get; set; }
+
     public static void ClearAll()
     {
       // _instances.Clear();
     }
 
-    public Vendor()
+    public Vendor(string name)
     {
-
+      Name = "test";
     }
   }
 }
