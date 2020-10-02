@@ -12,13 +12,14 @@ namespace OrderTracker.Models
     public Vendor(string name)
     {
       Name = name;
-      Id = 1;
+      _instances.Add(this);
+      Id = _instances.Count;
     }
 
 
     public static void ClearAll()
     {
-      // _instances.Clear();
+       _instances.Clear();
     }
 
     public static List<Vendor> GetAll()

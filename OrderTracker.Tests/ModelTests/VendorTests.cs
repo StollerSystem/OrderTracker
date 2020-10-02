@@ -63,6 +63,7 @@ namespace OrderTracker.Tests
       List<Vendor> result = Vendor.GetAll();
 
       //Assert
+      Console.WriteLine(newList.Count.ToString());
       CollectionAssert.AreEqual(newList, result);
     }
 
