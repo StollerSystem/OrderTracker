@@ -3,8 +3,7 @@ body {
   color: #3772FF;
 }
 
-.mainTheme {
-  /* text-align: center; */
+.mainTheme { 
   margin: auto;
   margin-top: 30px;
   border: solid #3772FF;
@@ -32,12 +31,9 @@ p, h3 {
   color: #080708;
 }
 
-.orderForm {
-  /* float: right; */
-  /* text-align: center; */
+.orderForm {  
   margin: auto;
-  padding: 5px;
-  /* width: 50%; */
+  padding: 5px;  
 }
 
 #homeImg img {
@@ -47,4 +43,14 @@ p, h3 {
   transform: translateX(-50%) translateY(-50%);  
   max-width: 50%;
   max-height: 50%;
+}
+
+#footer {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  color: #E6E8E6;
+  background:#080708;
+  padding:8px;
 }
