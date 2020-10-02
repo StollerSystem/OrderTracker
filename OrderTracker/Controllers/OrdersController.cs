@@ -30,7 +30,11 @@ namespace OrderTracker.Controllers
       //Order order = Order.Find(orderId);
       Vendor vendor = Vendor.Find(vendorId);
       vendor.RemoveOrder(orderId);
+
+      
       return View();
-    }
+    }   
+
+    
   }
 }

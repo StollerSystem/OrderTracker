@@ -49,7 +49,18 @@ namespace OrderTracker.Controllers
       model.Add("orders", vendorOrders);
       model.Add("vendor", foundVendor);
       return View("Show", model);
-    }    
+    } 
+
+    [HttpPost("/vendors/{vendorId}/orders/{orderId}/delete")]
+    public ActionResult Delete(int vendorId, int orderId)
+    {
+      //Order order = Order.Find(orderId);
+      Vendor vendor = Vendor.Find(vendorId);
+      vendor.RemoveOrder(orderId);
+
+      
+      return RedirectToAction("Show", vendorId);
+    }   
 
   }
 }
