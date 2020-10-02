@@ -22,20 +22,17 @@ This app will let you track vendors that place orders. You'll be able to add Ven
 
 * 5 Find funciton will return a Vendor object based on its ID property 
 
-* 5B "AddOrder" function will add an order ovject to a list in the Vendor Object.
-
 * 6 Create an instance of a Order class object.
 
 * 7 Get the description of the Order object.
 
-* 8 Set the description of an Order object.
+* 8 Order obejcts will be stored in a list and accessed with a "GetAll" function.
 
-* 9 Order obejcts will be stored in a list and accessed with a "GetAll" function.
+* 9 Each Vendor will have a unique ID property.
 
-* 10 Each Vendor will have a unique ID property.
+* 10 Find funciton will return an Order object based on its ID property.
 
-* 11 Find funciton will return an Order object based on its ID property.
-
+* 11 "AddOrder" function will add an order ovject to a list in the Vendor Object.
 
 ## Setup/Installation Requirements
 
