@@ -1,6 +1,6 @@
 # _Pierre's Order and Vendor Tracker_
 
-#### _A C# web app for tracking orders for vendors_ 10/02/20
+#### _A C# web app for tracking orders from vendors_ 10/02/20
 
 #### By _**Ben Stoller**_
 
@@ -35,11 +35,11 @@ On the order details page there is a button to remove the order.
 
 * 10 Find funciton will return an Order object based on its ID property.
 
-* 11 "AddOrder" function will add an order ovject to a list in the Vendor Object.
+* 11 "AddOrder" function will add an order object to a list in the Vendor Object.
 
 Stretch Goals:
 
-* 12 "RemoveOrder: function will delete an order from a vendor's list.
+* 12 "RemoveOrder" function will delete an order from a vendor's list.
 
 ## Setup/Installation Requirements
 
