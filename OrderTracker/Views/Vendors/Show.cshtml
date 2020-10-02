@@ -5,17 +5,20 @@
 @using OrderTracker.Models;
 
 <div class="mainTheme">
-  <h3>Here are all the orders for @Model["vendor"].Name:</h3>
-  @if (@Model["orders"].Count == 0)
-  {
-    <p>No orders have been placed yet!</p>
-  } 
-  <ol>
-  @foreach (Order order in @Model["orders"])
-  {
-    <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Description</a></li>
-  }
-  </ol>
+  <h2>Here are all the orders for <strong>@Model["vendor"].Name:</strong></h2>
+  <div class="smallBorder">
+    @if (@Model["orders"].Count == 0)
+    {
+      <p>No orders have been placed yet</p>
+    } 
+    <ol>
+    @foreach (Order order in @Model["orders"])
+    {
+      <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Description</a></li>
+    }
+    </ol>
+  </div>
+  <br>
   <p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new order</a></p>
   <p><a href='/vendors'>Return to vendors</a></p>
   <p><a href='/'>Return to home Page</a></p>

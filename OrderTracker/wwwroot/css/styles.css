@@ -16,12 +16,18 @@ body {
 }
 
 .smallBorder {
+  margin: auto;
   border: solid #3772FF;
   border-width: 1px;
   border-radius: 5px;
   padding: 10px;
+  margin-bottom: 20px;
 }
 
 a {
   color: #DF2935;
+}
+
+p {
+  color: #080708;
 }
