@@ -16,7 +16,7 @@ namespace OrderTracker.Models
     {
       Title = title;
       Description = description;
-      Price = price;
+      Price = "$"+price+".00";
       Date = date;
       _instances.Add(this);
       Id = _instances.Count;

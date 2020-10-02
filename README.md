@@ -38,8 +38,8 @@ This app will let you track vendors that place orders. You'll be able to add Ven
 
 * You will need to download and install .NET Core SDK (Software Development Kit) for your OS if you don't have it already.
 * Clone this repo down to your machine 
-* Navigate to the "Bakery.Solutions/Bakery.Tests" directory and run "$ dotnet restore" to create obj directories in both production and test projects. Do not touch this code.
-* Navigate to the "Bakery.Solutions/Bakery and type the command "$ dotnet run" to run the program!
+* Navigate to the "OrderTracker.Solutions/OrderTracker.Tests" directory and run "$ dotnet restore" to create obj directories in both production and test projects. Do not touch this code.
+* Navigate to the "OrderTracker.Solutions/Bakery and type the command "$ dotnet run" to run the program!
 
 
 ## Known Bugs
