@@ -83,7 +83,7 @@ namespace OrderTracker.Tests
     }
 
     [TestMethod]
-    public void AddOrder_AssociatesOrderWithCategory_OrderList()
+    public void AddOrder_AddOrderToVendor_OrderList()
     {
       //Arrange
       string description = "Bread Order";
@@ -100,6 +100,25 @@ namespace OrderTracker.Tests
       CollectionAssert.AreEqual(newList, result);
     }
 
+    [TestMethod]
+    public void RemoveOrder_RemoveAnOrderFromVendor_EmtpyList()
+    {
+      //Arrange
+      Vendor newVendor = new Vendor("test","test");
+      Order newOrder = new Order("test","test","test","test");      
+      newVendor.AddOrder(newOrder);
+      List<Order> emptyList = new List<Order> { };
+
+      //Act
+      newVendor.RemoveOrder(newOrder.Id);
+      List<Order> result = newVendor.Orders;
+
+      //Assert
+      CollectionAssert.AreEqual(emptyList, result);
+
+    }
+
+      
 
   }
 }

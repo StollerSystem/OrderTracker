@@ -41,5 +41,10 @@ namespace OrderTracker.Models
       Orders.Add(order);
     }
 
+    public void Remove(int Id)
+    {
+      
+    }
+
   }
 }
