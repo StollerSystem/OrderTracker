@@ -4,9 +4,10 @@ namespace OrderTracker.Models
 {
   public class Order
   {
-    public Order(string name)
+    public string Description { get; set; }
+    public Order(string description)
     {
-
+      Description = "test";
     }
   }
 }
