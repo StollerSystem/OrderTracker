@@ -7,9 +7,11 @@ namespace OrderTracker.Models
   {
     private static List<Vendor> _instances = new List<Vendor> { };
     public string Name { get; set; }
+    public string Description { get; set; }
     public int Id { get; set; }    
+    
 
-    public Vendor(string name)
+    public Vendor(string name, string description)
     {
       Name = name;
       _instances.Add(this);

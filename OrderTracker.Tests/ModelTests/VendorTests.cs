@@ -17,7 +17,7 @@ namespace OrderTracker.Tests
     [TestMethod]
     public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
     {
-      Vendor newVendor = new Vendor("test");
+      Vendor newVendor = new Vendor("test","test");
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
 
@@ -26,7 +26,7 @@ namespace OrderTracker.Tests
     {
       //Arrange
       string name = "Test Vendor Name";
-      Vendor newVendor = new Vendor(name);
+      Vendor newVendor = new Vendor(name,"test");
 
       //Act
       string result = newVendor.Name;
@@ -40,7 +40,7 @@ namespace OrderTracker.Tests
     {
       //Arrange
       string name = "Test Vendor ID";
-      Vendor newVendor = new Vendor(name);
+      Vendor newVendor = new Vendor(name,"test");
 
       //Act
       int result = newVendor.Id;
@@ -55,8 +55,8 @@ namespace OrderTracker.Tests
       //Arrange
       string name1 = "Bob";
       string name2 = "Peter";
-      Vendor newVendor1 = new Vendor(name1);
-      Vendor newVendor2 = new Vendor(name2);
+      Vendor newVendor1 = new Vendor(name1,"test");
+      Vendor newVendor2 = new Vendor(name2,"test");
       List<Vendor> newList = new List<Vendor> { newVendor1, newVendor2 };
 
       //Act
@@ -72,8 +72,8 @@ namespace OrderTracker.Tests
       //Arrange
       string name1 = "Bob";
       string name2 = "Peter";
-      Vendor newVendor1 = new Vendor(name1);
-      Vendor newVendor2 = new Vendor(name2);
+      Vendor newVendor1 = new Vendor(name1,"test");
+      Vendor newVendor2 = new Vendor(name2,"test");
 
       //Act
       Vendor result = Vendor.Find(2);
