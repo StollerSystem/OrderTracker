@@ -6,8 +6,8 @@
 
 ## Description
 
-This app will let you track vendors that place orders. You'll be able to add Vendors to a list, then click on that Vendor to see thier page. 
-From there you will be able to add orders for them, then you can click on each order to see a details page.
+This app will let you track vendors that place orders with you. You'll be able to add Vendors (name and description) to a list, then click on that Vendor to see thier page. 
+From there you will be able to see current orders and add orders for them. Then you can click on each order to see a page with the details.
 On the order details page there is a button to remove the order.
 
 

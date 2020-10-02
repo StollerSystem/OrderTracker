@@ -117,8 +117,5 @@ namespace OrderTracker.Tests
       CollectionAssert.AreEqual(emptyList, result);
 
     }
-
-      
-
   }
 }

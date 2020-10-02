@@ -45,6 +45,7 @@ p, h3 {
 }
 
 #footer {
+  text-align: center;
   position:fixed;
   bottom:0px;
   left:0px;
@@ -52,4 +53,8 @@ p, h3 {
   color: #E6E8E6;
   background:#080708;
   padding:8px;
+}
+
+#homeHeader {
+  text-align: center;
 }

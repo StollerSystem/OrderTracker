@@ -81,9 +81,5 @@ namespace ToDoList.Tests
       //Assert
       Assert.AreEqual(newOrder2, result);
     }
-
-
-    
-
   }
 }
