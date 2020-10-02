@@ -6,6 +6,7 @@ namespace OrderTracker.Models
   public class Vendor 
   {
     public string Name { get; set; }
+    public int Id { get; set; }
 
     public static void ClearAll()
     {
@@ -15,6 +16,7 @@ namespace OrderTracker.Models
     public Vendor(string name)
     {
       Name = name;
+      Id = 100;
     }
   }
 }
